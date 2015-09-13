@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>fontFlex - VanillaJS extension for dynamically changing font sizes according to container / browser width</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: normal;
+            margin: 5%;
+            padding: 0;
+            background: #111;
+            -webkit-font-smoothing: antialiased;
+        }
+        div {
+            position: fixed;
+            z-index: 2;
+            top: calc(50% - 30px);
+            left: calc(50% - 90px);
+            width: 180px;
+            height: 60px;
+            line-height: 61px;
+            text-align: center;
+            border-radius: 60px;
+            background: #FFF;
+        }
+        h1 {
+            font-weight: 300;
+            line-height: 150%;
+            color: #777;
+        }
+
+        h1 strong {
+            color: #fff
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Vanilla FontFlex</strong> is a lightweight extension for dynamically changing font sizes according to container or browser width. Intended for use with responsive or adaptive CSS layouts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula molestie ligula sed sollicitudin. Vestibulum porta et eros sed tristique. Curabitur ut ante sagittis, ultricies ligula nec, volutpat arcu. Nulla facilisi. Nunc dictum ultrices libero ut lacinia. Integer at risus justo. Fusce hendrerit, libero a congue sollicitudin, mauris lorem tincidunt lacus, ac semper lectus nisl eget mauris. Duis ex libero, consequat vel neque ut, sollicitudin commodo mi. Pellentesque diam metus, placerat at eleifend non, tristique ac urna. In blandit non leo ultricies semper.</h1>
+
+    <script type="text/javascript" src="../build/fontFlex.min.js"></script>
+    <script type="text/javascript">
+        FontFlex.init({
+            min: 20,
+            max: 60,
+            mid: 40,
+            target: 'h1'
+        });
+    </script>
+</body>
+</html>
