@@ -2,7 +2,7 @@
     "name": "fontFlex",
     "description": "VanillaJS extension for dynamically changing font sizes according to container / browser width",
     "main": "fontFlex.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Pedro Rogério",
     "private": true,
     "scripts": {
