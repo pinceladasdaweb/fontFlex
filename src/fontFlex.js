@@ -25,12 +25,12 @@
             return new FontFlex(options);
         }
 
-        if (!options.target) {
-            throw new TypeError('Provide a target to apply FontFlex');
+        if (!options) {
+            options = {};
         }
 
-        if (typeof options === 'string') {
-            options = { key : options };
+        if (!options.target) {
+            throw 'Provide a target to apply FontFlex';
         }
 
         this.target = Array.prototype.slice.call(document.querySelectorAll(options.target), 0);
