@@ -12,7 +12,7 @@ Define a default `CSS` font base by setting `font-size: 1em` and `line-height: 1
 
 **Syntax Example**
 ```javascript
-FontFlex.init({
+FontFlex({
     min: 20,
     max: 60,
     mid: 40,
