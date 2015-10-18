@@ -41,10 +41,6 @@
         this.ready();
     };
 
-    FontFlex.init = function (options) {
-        return new FontFlex(options);
-    };
-
     FontFlex.prototype = {
         trigger: function (eventName) {
             var event = document.createEvent('HTMLEvents');
